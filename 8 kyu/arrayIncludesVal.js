@@ -19,6 +19,9 @@ Return true if the array contains the value, false if not.
 function check(arr, val) {
     //Check if val can be found in arr
     return arr.includes(val);
+
+    // Alternate Solution
+    // return arr.some(element => element === val)
 }
 
 console.log(check([66, 101], 66))
