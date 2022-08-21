@@ -38,8 +38,8 @@ class Fighter {
 }
 
 function declareWinner(fighterOne, fighterTwo, firstAttacker) {
-  let f1Health = fighterOne.health / fighterTwo.damagePerAttack;
-  let f2Health = fighterTwo.health / fighterOne.damagePerAttack;
+  let f1Health = Math.ceil(fighterOne.health / fighterTwo.damagePerAttack);
+  let f2Health = Math.ceil(fighterTwo.health / fighterOne.damagePerAttack);
 
   if (f1Health < f2Health) {
     return fighterTwo.name;
