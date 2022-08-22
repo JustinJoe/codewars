@@ -19,7 +19,8 @@ circumstances under which you need to set an alarm). It should return false othe
 function setAlarm(employed, vacation) {
   //if employed is true, and vacation is false, return true
   //else return false
-  return employed === true && vacation === false ? true : false;
+  // return employed === true && vacation === false ? true : false;
+  return employed === true && vacation === false;
 }
 
 console.log(setAlarm(true, true));
