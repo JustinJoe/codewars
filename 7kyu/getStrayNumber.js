@@ -15,7 +15,9 @@ The input array will always be valid! (odd-length >= 3)
 // P:
 
 function getStrayNumber(arr) {
-  //loop through and check if element is same as previous
+  // sort array
+  //check if first element is same as next
+  //if first and second elements are same, return last element
   arr = arr.sort();
 
   if (arr[0] !== arr[1]) {
