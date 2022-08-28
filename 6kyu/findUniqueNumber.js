@@ -13,7 +13,7 @@ Find The Unique
 */
 
 // P: Takes in an array
-// R: Returns an integer
+// R: Returns a number
 // E:
 // findUniqueNumber([ 1, 1, 1, 2, 1, 1 ]) === 2
 // findUniqueNumber([ 0, 0, 0.55, 0, 0 ]) === 0.55
