@@ -33,7 +33,7 @@ function sortIt(arr) {
 
   array.sort((a, b) => {
     let n = arr.filter((x) => x === a).length;
-    let m = arr.filter((y) => y === a).length;
+    let m = arr.filter((y) => y === b).length;
     return n == m ? b - a : n - m;
   });
 
