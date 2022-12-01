@@ -24,8 +24,8 @@ Finally, return the padded string.
 function padIt(str, n) {
   for (let i = 0; i < n; i++) {
     if (i % 2 === 0) {
-      str = str.padStart("*");
-    } else str = str.padEnd("*");
+      str = str.padStart(str.length + 1, "*");
+    } else str = str.padEnd(str.length + 1, "*");
   }
 
   return str;
