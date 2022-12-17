@@ -13,6 +13,7 @@ If n == 0 return an empty sequence []
 // first(arr, 0) //=> [];
 // P:
 function pickFirstSet(arr, n = 1) {
+  // Filter based on index
   return arr.filter((ele, i) => i < n);
 }
 
