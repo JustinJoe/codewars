@@ -12,11 +12,11 @@ The aim of this kata is to split a given string into different strings of equal 
 function splitInParts(string, num) {
   let arr = [];
 
-  for (let i = 0; i < string.length; i += num) {
-    arr.push(str.slice(i, (i += num)));
+  for (let i = 0; i < string.length; num) {
+    arr.push(string.slice(i, (i += num)));
   }
 
-  return arr;
+  return arr.join(" ");
 }
 
 console.log(splitInParts("supercalifragilisticexpialidocious", 3));
