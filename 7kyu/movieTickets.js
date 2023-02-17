@@ -24,12 +24,11 @@ such that ceil(price of System B) < price of System A.
 // P:
 function movieTickets(card, ticket, perc) {
   let times = 0;
-  let ticketPrice = ticket;
+  let ticketPrice = 0;
 
-  while (Math.round(card) > ticket) {
-    card += Math.ceil(ticketPrice * perc ** (times + 1));
-    ticket += ticketPrice;
-    times++;
+  while (Math.ceil(card) >= ticketPrice) {
+    card += ticket * perc ** ++times;
+    ticketPrice += ticket;
   }
 
   return times;
